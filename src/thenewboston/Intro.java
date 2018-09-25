@@ -1,11 +1,13 @@
 package thenewboston;
 
 import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.scene.Scene;
+
 import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
 
 import javafx.scene.control.Button;
 
@@ -19,7 +21,7 @@ public class Intro extends Application implements EventHandler<ActionEvent> {
         primaryStage.setTitle("Hello World");
         button = new Button("Click Me!");
 
-        button.setOnAction(this);               // this indicates usage of handle method in class
+        button.setOnAction(this);                   // this indicates usage of handle method in class
 
         StackPane layout = new StackPane();
         layout.getChildren().add(button);

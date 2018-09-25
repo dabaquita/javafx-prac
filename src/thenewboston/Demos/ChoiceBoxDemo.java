@@ -1,4 +1,4 @@
-package thenewboston;
+package thenewboston.Demos;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;

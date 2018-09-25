@@ -1,4 +1,4 @@
-package Random;
+package Random.Random1;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -41,17 +41,17 @@ public class Random1 extends Application {
     public void start(Stage primaryStage) throws Exception
     {
         window = primaryStage;
-        window.setTitle("Login Screen");
+        window.setTitle("Login Demo");
         
 
         // Title label
         Label topLabel = new Label("Login for Some Fun");
+        topLabel.setId("title-label");
         GridPane.setConstraints(topLabel, 0, 0);                // set constraints
 
         // Username
         Label usernameLabel = new Label("Username:");
         TextField usernameTextField = new TextField();
-        usernameTextField.setPromptText("TheSyndicateProject");                      // default text
         
         GridPane.setConstraints(usernameLabel, 1, 1);           // set constraints
         GridPane.setConstraints(usernameTextField, 2, 1);
@@ -80,12 +80,15 @@ public class Random1 extends Application {
         gridPane.setHgap(10);
         gridPane.setVgap(10);
         gridPane.setAlignment(Pos.CENTER);
+        gridPane.setMinHeight(400);
+        gridPane.setMinWidth(500);
         
         gridPane.getChildren().addAll(topLabel, usernameLabel, usernameTextField,   // adds all scene components
                                     passwordLabel, passwordTextField, logButton);
 
         // Login Scene
-        loginScene = new Scene(gridPane, 400, 300);
+        loginScene = new Scene(gridPane, 500, 400);
+        loginScene.getStylesheets().add(Random1.class.getResource("R1Login.css").toExternalForm());
         window.setScene(loginScene);
         window.show();
     }

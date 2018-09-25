@@ -1,0 +1,34 @@
+
+/* GENERAL */
+
+.root {
+    -fx-background-color: #58504E;
+}
+
+.label {
+    -fx-text-fill: white;
+ }
+
+.button {
+
+}
+
+.text-field {
+
+}
+
+/* WELCOME COMPONENTS */
+
+#welcome-title {
+    -fx-text-fill: white;
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+}
+
+/* LOGIN COMPONENTS */
+#login-title {
+    -fx-font-size: 20;
+    -fx-text-fill: #F2F217;
+    -fx-font-weight: bold;
+}
+

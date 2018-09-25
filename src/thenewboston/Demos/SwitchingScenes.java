@@ -1,4 +1,4 @@
-package thenewboston;
+package thenewboston.Demos;
 
 /**
  * SwitchingScenes
